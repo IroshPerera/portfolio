@@ -1,0 +1,70 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+ 
+.experienceItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.textContent {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.textContent h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.textContent h3 {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  color: gray;
+}
+
+.textContent p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.imageContainer {
+  flex-shrink: 0;
+}
+
+.imageContainer img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+   
+ 
+  
+  hr {
+    width: 100px;
+    height: 1px;
+    border: none;
+    background-color: var(--text-color);
+    margin: 30px auto;
+  }
+  
+  @media (width >= 800px) {
+    .skillList {
+      max-width: fit-content;
+      gap: 30px;
+  
+      p {
+        font-size: 20px;
+      }
+    }
+  
+    hr {
+      width: 300px;
+    }
+  }
+  

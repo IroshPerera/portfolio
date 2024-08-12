@@ -1,0 +1,47 @@
+.container {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Default to column layout for smaller screens */
+  justify-content: center;
+  align-items: center;
+}
+
+.contactInfo {
+  margin-top: 10px;
+}
+
+.contactInfo p {
+  margin: 5px 0;
+}
+
+p > a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+p > a:hover {
+  font-weight: bold;
+}
+
+@media (min-width: 800px) {
+  .container {
+    flex-direction: row; /* Switch to row layout for wider screens */
+    justify-content: space-between;
+  }
+
+  .contactInfo {
+    margin-top: 0;
+  }
+  
+}
+
+@media (min-width: 1400px) {
+  .container {
+    padding: 40px; /* Increase padding for extra-large screens */
+  }
+
+  p > a {
+    font-size: 1.1em; /* Slightly increase font size */
+  }
+}
