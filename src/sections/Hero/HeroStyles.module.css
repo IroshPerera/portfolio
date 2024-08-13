@@ -92,6 +92,7 @@
       width: 350px;
     }
   }
+  
 }
 
 @media (width >= 1400px) {
@@ -100,5 +101,27 @@
       max-width: 400px;
       width: 400px;
     }
+  }
+}
+
+@media (max-width: 799px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero {
+    max-width: 200px;
+    width: 100%;
+  }
+
+  .info {
+    align-items: center;
+  }
+
+  .description {
+    max-width: 90%;
   }
 }
