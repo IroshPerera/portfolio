@@ -21,4 +21,8 @@ align-items: center;
 }
 
 
-  
+@media (max-width: 799px) {
+    .description{
+        padding: 20px;
+    }
+}
