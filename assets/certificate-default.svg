@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">Certificate image placeholder</title>
+  <desc id="desc">Replaceable certificate image placeholder for a portfolio learning credential.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#102c58"/>
+      <stop offset="1" stop-color="#081326"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbfdff"/>
+      <stop offset="1" stop-color="#dce9fb"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="600" rx="44" fill="url(#bg)"/>
+  <circle cx="820" cy="70" r="190" fill="#5eead4" fill-opacity=".07"/>
+  <rect x="124" y="82" width="712" height="436" rx="28" fill="url(#paper)"/>
+  <rect x="158" y="116" width="644" height="368" rx="18" fill="none" stroke="#2b5da8" stroke-opacity=".3" stroke-width="3"/>
+  <circle cx="480" cy="190" r="34" fill="#2563eb" fill-opacity=".14" stroke="#2563eb" stroke-opacity=".38" stroke-width="3"/>
+  <path d="m480 168 7 14 16 2-12 11 3 16-14-8-14 8 3-16-12-11 16-2 7-14Z" fill="#2563eb" fill-opacity=".75"/>
+  <rect x="300" y="254" width="360" height="17" rx="8.5" fill="#183865" fill-opacity=".82"/>
+  <rect x="254" y="296" width="452" height="11" rx="5.5" fill="#55749f" fill-opacity=".42"/>
+  <rect x="315" y="324" width="330" height="11" rx="5.5" fill="#55749f" fill-opacity=".28"/>
+  <text x="480" y="411" text-anchor="middle" fill="#2563eb" fill-opacity=".74" font-family="Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="4">UPLOAD IMAGE</text>
+  <path d="M414 453h132" stroke="#2563eb" stroke-opacity=".35" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">Reviewer image placeholder</title>
+  <desc id="desc">Neutral reviewer profile image placeholder for an editable sample recommendation.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2656b8"/>
+      <stop offset="1" stop-color="#0d244c"/>
+    </linearGradient>
+  </defs>
+  <circle cx="120" cy="120" r="120" fill="url(#bg)"/>
+  <circle cx="120" cy="91" r="36" fill="#dbeafe" fill-opacity=".9"/>
+  <path d="M49 206c7-42 34-64 71-64s64 22 71 64" fill="#dbeafe" fill-opacity=".9"/>
+  <circle cx="120" cy="120" r="101" fill="none" stroke="#93c5fd" stroke-opacity=".36" stroke-width="3"/>
+</svg>
