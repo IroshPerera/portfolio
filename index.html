@@ -1,36 +1,35 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Portfolio of Irosh Perera, a Software Engineer, Backend Developer, and Co-Founder of Novo Soft Technologies specialising in Java, Spring Boot, secure APIs, and production-ready business systems."
-    />
-    <meta name="author" content="Irosh Perera" />
-    <meta name="theme-color" content="#f7f9fc" data-theme-color />
-    <script>
-      (() => {
-        const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
-          ? "dark"
-          : "light";
-        let theme = systemTheme;
 
-        try {
-          theme = localStorage.getItem("irosh-portfolio-theme") || systemTheme;
-        } catch (_) {
-          theme = systemTheme;
-        }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfolio of Irosh Perera, a Software Engineer, Backend Developer, and Co-Founder of Novo Soft Technologies specialising in Java, Spring Boot, secure APIs, and production-ready business systems." />
+  <meta name="author" content="Irosh Perera" />
+  <meta name="theme-color" content="#f7f9fc" data-theme-color />
+  <script>
+    (() => {
+      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light";
+      let theme = systemTheme;
 
-        document.documentElement.dataset.theme = theme;
-        document.documentElement.style.colorScheme = theme;
-        document.querySelector("[data-theme-color]")?.setAttribute(
-          "content",
-          theme === "dark" ? "#08111f" : "#f7f9fc"
-        );
-      })();
-    </script>
-    <script type="application/ld+json">
+      try {
+        theme = localStorage.getItem("irosh-portfolio-theme") || systemTheme;
+      } catch (_) {
+        theme = systemTheme;
+      }
+
+      document.documentElement.dataset.theme = theme;
+      document.documentElement.style.colorScheme = theme;
+      document.querySelector("[data-theme-color]")?.setAttribute(
+        "content",
+        theme === "dark" ? "#08111f" : "#f7f9fc"
+      );
+    })();
+  </script>
+  <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
@@ -47,235 +46,208 @@
         }
       }
     </script>
-    <title>Irosh Perera | Software Engineer, Backend Developer</title>
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231a56db'/%3E%3Cpath d='M18 17h8v30h-8zm13 0h11c8 0 13 4 13 11 0 8-5 12-14 12h-2v7h-8zm8 7v9h3c3 0 5-1 5-5 0-3-2-4-5-4z' fill='white'/%3E%3C/svg%3E"
-    />
-    <link rel="stylesheet" href="./styles.css" />
-    <script src="./script.js" defer></script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+  <title>Irosh Perera | Software Engineer, Backend Developer</title>
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231a56db'/%3E%3Cpath d='M18 17h8v30h-8zm13 0h11c8 0 13 4 13 11 0 8-5 12-14 12h-2v7h-8zm8 7v9h3c3 0 5-1 5-5 0-3-2-4-5-4z' fill='white'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./script.js" defer></script>
+</head>
 
-    <header class="site-header" data-header>
-      <div class="nav-wrap container">
-        <a class="brand" href="#home" aria-label="Irosh Perera home">
-          <span class="brand-mark" aria-hidden="true">IP</span>
-          <span>Irosh Perera</span>
-        </a>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-        <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-menu>
-          <a href="#about">About</a>
-          <a href="#education">Education</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#recommendations">Reviews</a>
-          <a href="#contact">Contact</a>
-          <a class="nav-download" href="./assets/IROSH PERERA RESUME.pdf" download>
+  <header class="site-header" data-header>
+    <div class="nav-wrap container">
+      <a class="brand" href="#home" aria-label="Irosh Perera home">
+        <span class="brand-mark" aria-hidden="true">IP</span>
+        <span>Irosh Perera</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-menu>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#recommendations">Reviews</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-download" href="./assets/IROSH PERERA RESUME.pdf" download>
           Download Resume
-          </a>
-        </nav>
+        </a>
+      </nav>
 
-        <button
-          class="theme-toggle"
-          type="button"
-          aria-label="Switch to dark mode"
-          title="Switch to dark mode"
-          data-theme-toggle
-        >
-          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2Z" />
-          </svg>
-          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="12" cy="12" r="3.5" />
-            <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42" />
-          </svg>
-        </button>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode"
+        data-theme-toggle>
+        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2Z" />
+        </svg>
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="3.5" />
+          <path
+            d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42" />
+        </svg>
+      </button>
 
-        <button
-          class="menu-button"
-          type="button"
-          aria-label="Open navigation"
-          aria-expanded="false"
-          aria-controls="site-nav"
-          data-menu-button
-        >
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </header>
+      <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false"
+        aria-controls="site-nav" data-menu-button>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
 
-    <main id="main">
-      <section class="hero section" id="home" aria-labelledby="hero-title">
-        <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
-        <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+  <main id="main">
+    <section class="hero section" id="home" aria-labelledby="hero-title">
+      <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
 
-        <div class="container hero-grid">
-          <div class="hero-copy reveal">
-            <div class="availability">
-              <span class="availability-dot" aria-hidden="true"></span>
-              Open to backend engineering opportunities
-            </div>
-            <p class="eyebrow">Software Engineer <span>/</span> Backend Developer</p>
-            <h1 id="hero-title">
-              Hi, I’m
-              <span class="accent-text">Irosh Perera.</span>
-            </h1>
-            <p class="hero-positioning">I turn complex business workflows into dependable backend products.</p>
-            <p class="hero-intro">
-              Software Engineer specialising in Java, Spring Boot, REST API architecture,
-              and data-driven business systems. As Co-Founder of Novo Soft Technologies,
-              I take products from technical planning to secure production deployment.
-            </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#projects">
-                View my work
-                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10h10M11 6l4 4-4 4" /></svg>
-              </a>
-              <a class="button button-secondary" href="./assets/IROSH PERERA RESUME.pdf" download>
-                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v10m0 0 4-4m-4 4L6 9M4 16h12" /></svg>
-                Download Resume
-              </a>
-            </div>
-            <div class="hero-links" aria-label="Professional links">
-              <a href="mailto:iroshlashan31@gmail.com">iroshlashan31@gmail.com</a>
-              <span aria-hidden="true"></span>
-              <a href="https://www.linkedin.com/in/irosh-perera-59481727b/" target="_blank" rel="noreferrer">LinkedIn</a>
-            </div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="availability">
+            <span class="availability-dot" aria-hidden="true"></span>
+            Open to backend engineering opportunities
           </div>
+          <p class="eyebrow">Software Engineer <span>/</span> Backend Developer</p>
+          <h1 id="hero-title">
+            Hi, I’m
+            <span class="accent-text">Irosh Perera.</span>
+          </h1>
+          <p class="hero-positioning">I turn complex business workflows into dependable backend products.</p>
+          <p class="hero-intro">
+            Software Engineer specialising in Java, Spring Boot, REST API architecture,
+            and data-driven business systems. As Co-Founder of Novo Soft Technologies,
+            I take products from technical planning to secure production deployment.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">
+              View my work
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M5 10h10M11 6l4 4-4 4" />
+              </svg>
+            </a>
+            <a class="button button-secondary" href="./assets/IROSH PERERA RESUME.pdf" download>
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M10 3v10m0 0 4-4m-4 4L6 9M4 16h12" />
+              </svg>
+              Download Resume
+            </a>
+          </div>
+          <div class="hero-links" aria-label="Professional links">
+            <a href="mailto:iroshlashan31@gmail.com">iroshlashan31@gmail.com</a>
+            <span aria-hidden="true"></span>
+            <a href="https://www.linkedin.com/in/irosh-perera-59481727b/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
 
-          <div class="hero-visual reveal" aria-label="Professional portrait of Irosh Perera">
-            <div class="portrait-stage">
-              <div class="portrait-backdrop" aria-hidden="true"></div>
-              <div class="portrait-frame">
-                <img
-                  src="./assets/irosh-perera-portrait.jpg"
-                  alt="Irosh Perera in professional business attire"
-                  width="427"
-                  height="640"
-                />
+        <div class="hero-visual reveal" aria-label="Professional portrait of Irosh Perera">
+          <div class="portrait-stage">
+            <div class="portrait-backdrop" aria-hidden="true"></div>
+            <div class="portrait-frame">
+              <img src="./assets/irosh-perera-portrait.jpg" alt="Irosh Perera in professional business attire"
+                width="427" height="640" />
+            </div>
+            <div class="founder-code-card" aria-label="Software Engineer profile code snippet">
+              <div class="founder-code-head">
+                <span class="code-window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span>software-engineer-profile.ts</span>
               </div>
-              <div class="founder-code-card" aria-label="Software Engineer profile code snippet">
-                <div class="founder-code-head">
-                  <span class="code-window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
-                  <span>software-engineer-profile.ts</span>
-                </div>
-                <pre><code><span class="code-keyword">const</span> <span class="code-variable">role</span> = {
+              <pre><code><span class="code-keyword">const</span> <span class="code-variable">role</span> = {
   title: <span class="code-string">"Software Engineer"</span>,
   company: <span class="code-string">"Novo Soft Technologies"</span>
 };</code></pre>
+            </div>
+            <div class="portrait-chip experience-chip">
+              <strong>2+</strong>
+              <span>Years delivering<br />production systems</span>
+            </div>
+            <div class="portrait-signature" aria-hidden="true">
+              <span>Java</span><i></i><span>Spring Boot</span><i></i><span>PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-index">01 / About</p>
+          <h2 id="about-title">Engineering dependable software, from API to deployment.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p class="lead">
+              I am a Sri Lankan software engineer and co-founder with more than two years of
+              hands-on experience building client systems and deploying applications to production.
+            </p>
+            <p>
+              My strongest work is on the backend: translating business requirements into
+              maintainable services, secure role-based access, clear API contracts, and
+              well-structured relational data. I also work comfortably across Angular and
+              React interfaces when a project needs end-to-end delivery.
+            </p>
+            <div class="founder-note">
+              <img class="founder-note-mark" src="./assets/novo-logo.png" alt="Novo Soft Technologies logo" />
+              <div>
+                <strong>Co-Founder, Novo Soft Technologies (Pvt) Ltd</strong>
+                <span>Building practical software products and guiding client delivery.</span>
               </div>
-              <div class="portrait-chip experience-chip">
-                <strong>2+</strong>
-                <span>Years delivering<br />production systems</span>
+            </div>
+          </div>
+
+          <div class="about-skills-visual reveal">
+            <img class="about-portrait-cutout" src="./assets/about-portrait-cutout.webp" alt="" width="768"
+              height="1152" loading="lazy" decoding="async" aria-hidden="true" />
+            <div class="skills-panel" aria-label="Technical skills">
+              <div class="skill-group">
+                <p>Backend</p>
+                <div class="skill-list">
+                  <span>Java</span><span>Spring Boot</span><span>Spring Security</span><span>Express Js</span>
+                  <span>REST APIs</span><span>JPA / Hibernate</span><span>JWT</span>
+                </div>
               </div>
-              <div class="portrait-signature" aria-hidden="true">
-                <span>Java</span><i></i><span>Spring Boot</span><i></i><span>PostgreSQL</span>
+              <div class="skill-group">
+                <p>Data &amp; Frontend</p>
+                <div class="skill-list">
+                  <span>PostgreSQL</span><span>MySQL</span><span>Redis</span>
+                  <span>Angular</span><span>React</span><span>Next.js</span>
+                </div>
+              </div>
+              <div class="skill-group">
+                <p>Delivery</p>
+                <div class="skill-list">
+                  <span>Linux</span><span>Nginx</span><span>Docker</span>
+                  <span>Git</span><span>Maven</span><span>PM2</span><span>VPS Deployment</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
 
-      <section class="section about" id="about" aria-labelledby="about-title">
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="section-index">01 / About</p>
-            <h2 id="about-title">Engineering dependable software, from API to deployment.</h2>
+      </div>
+    </section>
+
+    <section class="section education" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <div class="section-heading education-heading reveal">
+          <p class="section-index">02 / Education</p>
+          <div>
+            <h2 id="education-title">Education that supports practical, production-focused engineering.</h2>
+            <p class="section-side-copy education-intro">
+              Official documents are shown only when issued and available—no sample or recreated certificates.
+            </p>
           </div>
-
-          <div class="about-grid">
-            <div class="about-copy reveal">
-              <p class="lead">
-                I am a Sri Lankan software engineer and co-founder with more than two years of
-                hands-on experience building client systems and deploying applications to production.
-              </p>
-              <p>
-                My strongest work is on the backend: translating business requirements into
-                maintainable services, secure role-based access, clear API contracts, and
-                well-structured relational data. I also work comfortably across Angular and
-                React interfaces when a project needs end-to-end delivery.
-              </p>
-              <div class="founder-note">
-                <img class="founder-note-mark" src="./assets/novo-logo.png" alt="Novo Soft Technologies logo" />
-                <div>
-                  <strong>Co-Founder, Novo Soft Technologies (Pvt) Ltd</strong>
-                  <span>Building practical software products and guiding client delivery.</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="about-skills-visual reveal">
-              <img
-                class="about-portrait-cutout"
-                src="./assets/about-portrait-cutout.webp"
-                alt=""
-                width="768"
-                height="1152"
-                loading="lazy"
-                decoding="async"
-                aria-hidden="true"
-              />
-              <div class="skills-panel" aria-label="Technical skills">
-                <div class="skill-group">
-                  <p>Backend</p>
-                  <div class="skill-list">
-                    <span>Java</span><span>Spring Boot</span><span>Spring Security</span><span>Express Js</span>
-                    <span>REST APIs</span><span>JPA / Hibernate</span><span>JWT</span>
-                  </div>
-                </div>
-                <div class="skill-group">
-                  <p>Data &amp; Frontend</p>
-                  <div class="skill-list">
-                    <span>PostgreSQL</span><span>MySQL</span><span>Redis</span>
-                    <span>Angular</span><span>React</span><span>Next.js</span>
-                  </div>
-                </div>
-                <div class="skill-group">
-                  <p>Delivery</p>
-                  <div class="skill-list">
-                    <span>Linux</span><span>Nginx</span><span>Docker</span>
-                    <span>Git</span><span>Maven</span><span>PM2</span><span>VPS Deployment</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
-      </section>
 
-      <section class="section education" id="education" aria-labelledby="education-title">
-        <div class="container">
-          <div class="section-heading education-heading reveal">
-            <p class="section-index">02 / Education</p>
-            <div>
-              <h2 id="education-title">Education that supports practical, production-focused engineering.</h2>
-              <p class="section-side-copy education-intro">
-                Official documents are shown only when issued and available—no sample or recreated certificates.
-              </p>
-            </div>
-          </div>
+        <div class="education-stage">
+          <img class="education-graduation-cutout" src="./assets/education-graduation-cutout.webp" alt="" width="768"
+            height="1152" loading="lazy" decoding="async" aria-hidden="true" />
 
-          <div class="education-stage">
-            <img
-              class="education-graduation-cutout"
-              src="./assets/education-graduation-cutout.webp"
-              alt=""
-              width="768"
-              height="1152"
-              loading="lazy"
-              decoding="async"
-              aria-hidden="true"
-            />
-
-            <div class="education-grid">
+          <div class="education-grid">
             <article class="education-card reveal">
               <div class="education-summary">
-                <img class="education-logo education-logo-wide" src="./assets/uni-of-gm.png" alt="University of Greater Manchester logo" />
+                <img class="education-logo education-logo-wide" src="./assets/uni-of-gm.png"
+                  alt="University of Greater Manchester logo" />
                 <div>
                   <p class="education-type">Bachelor’s Degree</p>
                   <h3>BSc (Hons) Computer Science</h3>
@@ -304,7 +276,8 @@
 
             <article class="education-card reveal">
               <div class="education-summary">
-                <img class="education-logo" src="./assets/ijse-logo.png" alt="Institute of Software Engineering (IJSE) logo" />
+                <img class="education-logo" src="./assets/ijse-logo.png"
+                  alt="Institute of Software Engineering (IJSE) logo" />
                 <div>
                   <p class="education-type">Professional Programme</p>
                   <h3>Graduate Diploma in Software Engineering</h3>
@@ -329,783 +302,981 @@
                 </div>
               </div>
             </article>
-            </div>
           </div>
+        </div>
 
-          <div class="general-education reveal" aria-labelledby="general-education-title">
-            <p class="general-education-label" id="general-education-title">General Education</p>
-            <div class="general-education-grid">
-              <article class="school-qualification">
-                <div class="school-level" role="img" aria-label="Sri Lanka Government emblem for GCE Advanced Level">
-                  <img src="https://www.sltda.gov.lk/images/sl-national.png" alt="" loading="lazy" referrerpolicy="no-referrer" />
-                  <span>A/L</span>
-                </div>
-                <div>
-                  <strong>GCE Advanced Level</strong>
-                  <span>Commerce Stream</span>
-                </div>
-                <span class="school-result">Passed</span>
-              </article>
-              <article class="school-qualification">
-                <div class="school-level" role="img" aria-label="Sri Lanka Government emblem for GCE Ordinary Level">
-                  <img src="https://www.sltda.gov.lk/images/sl-national.png" alt="" loading="lazy" referrerpolicy="no-referrer" />
-                  <span>O/L</span>
-                </div>
-                <div>
-                  <strong>GCE Ordinary Level</strong>
-                  <span>General Education</span>
-                </div>
-                <span class="school-result">Passed</span>
-              </article>
-            </div>
-          </div>
-
-          <div class="certificate-showcase reveal" aria-labelledby="certificates-title">
-            <div class="certificate-heading">
+        <div class="general-education reveal" aria-labelledby="general-education-title">
+          <p class="general-education-label" id="general-education-title">General Education</p>
+          <div class="general-education-grid">
+            <article class="school-qualification">
+              <div class="school-level" role="img" aria-label="Sri Lanka Government emblem for GCE Advanced Level">
+                <img src="https://www.sltda.gov.lk/images/sl-national.png" alt="" loading="lazy"
+                  referrerpolicy="no-referrer" />
+                <span>A/L</span>
+              </div>
               <div>
-                <p class="education-type">Certificates &amp; Credentials</p>
-                <h3 id="certificates-title">Professional learning milestones.</h3>
+                <strong>GCE Advanced Level</strong>
+                <span>Commerce Stream</span>
               </div>
-              <p>Open a card to view a privacy-protected preview. Sensitive identifiers and signatures are hidden; originals are available on request.</p>
-            </div>
-            <div class="certificate-grid">
-              <button
-                class="certificate-card certificate-card-featured"
-                type="button"
-                data-gallery-open
-                data-gallery-src="./assets/innovesta-certificate-preview.png"
-                data-gallery-alt="Privacy-protected preview of the Innovesta 2023 certificate awarded to Irosh Perera as a member of team Future Tech Solutions"
-                data-gallery-title="Best Innovative Software — Team Award · Innovesta ’23"
-                data-gallery-note="Privacy-protected preview · Original credential available on request."
-              >
-                <span class="credential-preview-badge" aria-hidden="true">
-                  <svg viewBox="0 0 20 20"><path d="M6.5 8V6.2a3.5 3.5 0 0 1 7 0V8M5 8h10v8H5z" /></svg>
-                  Protected preview
-                </span>
-                <img src="./assets/innovesta-certificate-preview.png" alt="Privacy-protected preview of the Innovesta 2023 certificate awarded to Irosh Perera as a member of team Future Tech Solutions" loading="lazy" />
-                <span class="certificate-card-copy certificate-award-copy">
-                  <span class="certificate-award-kicker">Team Award · Innovesta ’23</span>
-                  <strong>Best Innovative Software</strong>
-                  <span>Recognised with team Future Tech Solutions for the Software Engineering final project.</span>
-                </span>
-              </button>
-              <button
-                class="certificate-card"
-                type="button"
-                data-gallery-open
-                data-gallery-src="./assets/gdse-certificate-preview.png"
-                data-gallery-alt="Privacy-protected preview of the Graduate Diploma in Software Engineering certificate issued by IJSE to Irosh Perera"
-                data-gallery-title="Graduate Diploma in Software Engineering · IJSE"
-                data-gallery-note="Privacy-protected preview · Original credential available on request."
-              >
-                <span class="credential-preview-badge" aria-hidden="true">
-                  <svg viewBox="0 0 20 20"><path d="M6.5 8V6.2a3.5 3.5 0 0 1 7 0V8M5 8h10v8H5z" /></svg>
-                  Protected preview
-                </span>
-                <img src="./assets/gdse-certificate-preview.png" alt="Privacy-protected preview of the Graduate Diploma in Software Engineering certificate issued by IJSE to Irosh Perera" loading="lazy" />
-                <span class="certificate-card-copy">
-                  <strong>Graduate Diploma in Software Engineering</strong>
-                  <span>Institute of Software Engineering (IJSE) · Issued February 2026</span>
-                </span>
-              </button>
-              <button
-                class="certificate-card"
-                type="button"
-                data-gallery-open
-                data-gallery-src="./assets/circle-edge-certificate-preview.png"
-                data-gallery-alt="Privacy-protected preview of the Circle Edge Creative Software Solution Awards certificate awarded to Irosh Perera as a member of team SoluTech"
-                data-gallery-title="Circle Edge · Creative Software Solution Awards"
-                data-gallery-note="Privacy-protected preview · Original credential available on request."
-              >
-                <span class="credential-preview-badge" aria-hidden="true">
-                  <svg viewBox="0 0 20 20"><path d="M6.5 8V6.2a3.5 3.5 0 0 1 7 0V8M5 8h10v8H5z" /></svg>
-                  Protected preview
-                </span>
-                <img src="./assets/circle-edge-certificate-preview.png" alt="Privacy-protected preview of the Circle Edge Creative Software Solution Awards certificate awarded to Irosh Perera as a member of team SoluTech" loading="lazy" />
-                <span class="certificate-card-copy">
-                  <strong>Circle Edge — Creative Software Solution Awards</strong>
-                  <span>Team SoluTech · IJSE · Issued July 2024</span>
-                </span>
-              </button>
-              <button
-                class="certificate-card"
-                type="button"
-                data-gallery-open
-                data-gallery-src="./assets/solo-learn-java-preview.png"
-                data-gallery-alt="Privacy-protected preview of the SoloLearn Introduction to Java course certificate issued to Irosh Perera"
-                data-gallery-title="Introduction to Java · SoloLearn"
-                data-gallery-note="Privacy-protected preview · Original credential available on request."
-              >
-                <span class="credential-preview-badge" aria-hidden="true">
-                  <svg viewBox="0 0 20 20"><path d="M6.5 8V6.2a3.5 3.5 0 0 1 7 0V8M5 8h10v8H5z" /></svg>
-                  Protected preview
-                </span>
-                <img src="./assets/solo-learn-java-preview.png" alt="Privacy-protected preview of the SoloLearn Introduction to Java course certificate issued to Irosh Perera" loading="lazy" />
-                <span class="certificate-card-copy">
-                  <strong>Introduction to Java</strong>
-                  <span>SoloLearn · Issued June 2023</span>
-                </span>
-              </button>
-              <button
-                class="certificate-card"
-                type="button"
-                data-gallery-open
-                data-gallery-src="./assets/solo-learn-sql-preview.png"
-                data-gallery-alt="Privacy-protected preview of the SoloLearn Introduction to SQL course certificate issued to Irosh Perera"
-                data-gallery-title="Introduction to SQL · SoloLearn"
-                data-gallery-note="Privacy-protected preview · Original credential available on request."
-              >
-                <span class="credential-preview-badge" aria-hidden="true">
-                  <svg viewBox="0 0 20 20"><path d="M6.5 8V6.2a3.5 3.5 0 0 1 7 0V8M5 8h10v8H5z" /></svg>
-                  Protected preview
-                </span>
-                <img src="./assets/solo-learn-sql-preview.png" alt="Privacy-protected preview of the SoloLearn Introduction to SQL course certificate issued to Irosh Perera" loading="lazy" />
-                <span class="certificate-card-copy">
-                  <strong>Introduction to SQL</strong>
-                  <span>SoloLearn · Issued July 2023</span>
-                </span>
-              </button>
-            </div>
+              <span class="school-result">Passed</span>
+            </article>
+            <article class="school-qualification">
+              <div class="school-level" role="img" aria-label="Sri Lanka Government emblem for GCE Ordinary Level">
+                <img src="https://www.sltda.gov.lk/images/sl-national.png" alt="" loading="lazy"
+                  referrerpolicy="no-referrer" />
+                <span>O/L</span>
+              </div>
+              <div>
+                <strong>GCE Ordinary Level</strong>
+                <span>General Education</span>
+              </div>
+              <span class="school-result">Passed</span>
+            </article>
           </div>
         </div>
-      </section>
 
-      <section class="section experience" id="experience" aria-labelledby="experience-title">
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="section-index">03 / Experience</p>
-            <h2 id="experience-title">Experience built around real products and real users.</h2>
+        <div class="certificate-showcase reveal" aria-labelledby="certificates-title">
+          <div class="certificate-heading">
+            <div>
+              <p class="education-type">Certificates &amp; Credentials</p>
+              <h3 id="certificates-title">Professional learning milestones.</h3>
+            </div>
+            <p>Open a card to view a privacy-protected preview. Sensitive identifiers and signatures are hidden;
+              originals are available on request.</p>
+          </div>
+          <div class="certificate-grid">
+            <button class="certificate-card certificate-card-featured" type="button" data-gallery-open
+              data-gallery-src="./assets/innovesta-certificate-preview.png"
+              data-gallery-alt="Privacy-protected preview of the Innovesta 2023 certificate awarded to Irosh Perera as a member of team Future Tech Solutions"
+              data-gallery-title="Best Innovative Software — Team Award · Innovesta ’23"
+              data-gallery-note="Privacy-protected preview · Original credential available on request.">
+              <span class="credential-preview-badge" aria-hidden="true">
+                <svg viewBox="0 0 20 20">
+                  <path d="M6.5 8V6.2a3.5 3.5 0 0 1 7 0V8M5 8h10v8H5z" />
+                </svg>
+                Protected preview
+              </span>
+              <img src="./assets/innovesta-certificate-preview.png"
+                alt="Privacy-protected preview of the Innovesta 2023 certificate awarded to Irosh Perera as a member of team Future Tech Solutions"
+                loading="lazy" />
+              <span class="certificate-card-copy certificate-award-copy">
+                <span class="certificate-award-kicker">Team Award · Innovesta ’23</span>
+                <strong>Best Innovative Software</strong>
+                <span>Recognised with team Future Tech Solutions for the Software Engineering final project.</span>
+              </span>
+            </button>
+            <button class="certificate-card" type="button" data-gallery-open
+              data-gallery-src="./assets/gdse-certificate-preview.png"
+              data-gallery-alt="Privacy-protected preview of the Graduate Diploma in Software Engineering certificate issued by IJSE to Irosh Perera"
+              data-gallery-title="Graduate Diploma in Software Engineering · IJSE"
+              data-gallery-note="Privacy-protected preview · Original credential available on request.">
+              <span class="credential-preview-badge" aria-hidden="true">
+                <svg viewBox="0 0 20 20">
+                  <path d="M6.5 8V6.2a3.5 3.5 0 0 1 7 0V8M5 8h10v8H5z" />
+                </svg>
+                Protected preview
+              </span>
+              <img src="./assets/gdse-certificate-preview.png"
+                alt="Privacy-protected preview of the Graduate Diploma in Software Engineering certificate issued by IJSE to Irosh Perera"
+                loading="lazy" />
+              <span class="certificate-card-copy">
+                <strong>Graduate Diploma in Software Engineering</strong>
+                <span>Institute of Software Engineering (IJSE) · Issued February 2026</span>
+              </span>
+            </button>
+            <button class="certificate-card" type="button" data-gallery-open
+              data-gallery-src="./assets/circle-edge-certificate-preview.png"
+              data-gallery-alt="Privacy-protected preview of the Circle Edge Creative Software Solution Awards certificate awarded to Irosh Perera as a member of team SoluTech"
+              data-gallery-title="Circle Edge · Creative Software Solution Awards"
+              data-gallery-note="Privacy-protected preview · Original credential available on request.">
+              <span class="credential-preview-badge" aria-hidden="true">
+                <svg viewBox="0 0 20 20">
+                  <path d="M6.5 8V6.2a3.5 3.5 0 0 1 7 0V8M5 8h10v8H5z" />
+                </svg>
+                Protected preview
+              </span>
+              <img src="./assets/circle-edge-certificate-preview.png"
+                alt="Privacy-protected preview of the Circle Edge Creative Software Solution Awards certificate awarded to Irosh Perera as a member of team SoluTech"
+                loading="lazy" />
+              <span class="certificate-card-copy">
+                <strong>Circle Edge — Creative Software Solution Awards</strong>
+                <span>Team SoluTech · IJSE · Issued July 2024</span>
+              </span>
+            </button>
+            <button class="certificate-card" type="button" data-gallery-open
+              data-gallery-src="./assets/solo-learn-java-preview.png"
+              data-gallery-alt="Privacy-protected preview of the SoloLearn Introduction to Java course certificate issued to Irosh Perera"
+              data-gallery-title="Introduction to Java · SoloLearn"
+              data-gallery-note="Privacy-protected preview · Original credential available on request.">
+              <span class="credential-preview-badge" aria-hidden="true">
+                <svg viewBox="0 0 20 20">
+                  <path d="M6.5 8V6.2a3.5 3.5 0 0 1 7 0V8M5 8h10v8H5z" />
+                </svg>
+                Protected preview
+              </span>
+              <img src="./assets/solo-learn-java-preview.png"
+                alt="Privacy-protected preview of the SoloLearn Introduction to Java course certificate issued to Irosh Perera"
+                loading="lazy" />
+              <span class="certificate-card-copy">
+                <strong>Introduction to Java</strong>
+                <span>SoloLearn · Issued June 2023</span>
+              </span>
+            </button>
+            <button class="certificate-card" type="button" data-gallery-open
+              data-gallery-src="./assets/solo-learn-sql-preview.png"
+              data-gallery-alt="Privacy-protected preview of the SoloLearn Introduction to SQL course certificate issued to Irosh Perera"
+              data-gallery-title="Introduction to SQL · SoloLearn"
+              data-gallery-note="Privacy-protected preview · Original credential available on request.">
+              <span class="credential-preview-badge" aria-hidden="true">
+                <svg viewBox="0 0 20 20">
+                  <path d="M6.5 8V6.2a3.5 3.5 0 0 1 7 0V8M5 8h10v8H5z" />
+                </svg>
+                Protected preview
+              </span>
+              <img src="./assets/solo-learn-sql-preview.png"
+                alt="Privacy-protected preview of the SoloLearn Introduction to SQL course certificate issued to Irosh Perera"
+                loading="lazy" />
+              <span class="certificate-card-copy">
+                <strong>Introduction to SQL</strong>
+                <span>SoloLearn · Issued July 2023</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-index">03 / Experience</p>
+          <h2 id="experience-title">Experience built around real products and real users.</h2>
+        </div>
+
+        <div class="experience-layout">
+          <div class="experience-portrait-stage reveal" aria-hidden="true">
+            <img class="experience-portrait-cutout" src="./assets/experience-portrait-cutout.webp" alt="" width="768"
+              height="1152" loading="lazy" decoding="async" />
           </div>
 
-          <div class="experience-layout">
-            <div class="experience-portrait-stage reveal" aria-hidden="true">
-              <img
-                class="experience-portrait-cutout"
-                src="./assets/experience-portrait-cutout.webp"
-                alt=""
-                width="768"
-                height="1152"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-
-            <div class="timeline">
-              <article class="timeline-item reveal">
-                <div class="timeline-date">May 2025 - Present</div>
-                <div class="timeline-marker" aria-hidden="true"></div>
-                <div class="timeline-content">
-                  <div class="role-heading">
-                    <div><h3>Software Engineer &amp; Co-Founder</h3><p>Novo Soft Technologies (Pvt) Ltd</p></div>
-                    <span>Current</span>
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <div class="timeline-date">May 2025 - Present</div>
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <div class="role-heading">
+                  <div>
+                    <h3>Software Engineer &amp; Co-Founder</h3>
+                    <p>Novo Soft Technologies (Pvt) Ltd</p>
                   </div>
-                  <p>
-                    Co-founded the company while building business applications, shaping backend
-                    architecture, and managing production delivery across Linux environments.
-                  </p>
+                  <span>Current</span>
                 </div>
-              </article>
+                <p>
+                  Co-founded the company while building business applications, shaping backend
+                  architecture, and managing production delivery across Linux environments.
+                </p>
+              </div>
+            </article>
 
-              <article class="timeline-item reveal">
-                <div class="timeline-date">Mar 2025 - Apr 2025</div>
-                <div class="timeline-marker" aria-hidden="true"></div>
-                <div class="timeline-content">
-                  <div class="role-heading"><div><h3>Associate Software Engineer</h3><p>Webmotech Pvt Ltd</p></div></div>
-                  <p>
-                    Developed Java and Spring Boot services, worked with relational databases,
-                    and supported feature delivery across production-focused web projects.
-                  </p>
+            <article class="timeline-item reveal">
+              <div class="timeline-date">Mar 2025 - Apr 2025</div>
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <div class="role-heading">
+                  <div>
+                    <h3>Associate Software Engineer</h3>
+                    <p>Webmotech Pvt Ltd</p>
+                  </div>
                 </div>
-              </article>
+                <p>
+                  Developed Java and Spring Boot services, worked with relational databases,
+                  and supported feature delivery across production-focused web projects.
+                </p>
+              </div>
+            </article>
 
-              <article class="timeline-item reveal">
-                <div class="timeline-date">Sep 2024 - Mar 2025</div>
-                <div class="timeline-marker" aria-hidden="true"></div>
-                <div class="timeline-content">
-                  <div class="role-heading"><div><h3>Trainee Associate Software Engineer</h3><p>Webmotech Pvt Ltd</p></div></div>
-                  <p>
-                    Implemented REST APIs, authentication flows, data models, and backend
-                    features while contributing to full product development cycles.
-                  </p>
+            <article class="timeline-item reveal">
+              <div class="timeline-date">Sep 2024 - Mar 2025</div>
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <div class="role-heading">
+                  <div>
+                    <h3>Trainee Associate Software Engineer</h3>
+                    <p>Webmotech Pvt Ltd</p>
+                  </div>
                 </div>
-              </article>
+                <p>
+                  Implemented REST APIs, authentication flows, data models, and backend
+                  features while contributing to full product development cycles.
+                </p>
+              </div>
+            </article>
 
-              <article class="timeline-item reveal">
-                <div class="timeline-date">Jul 2023 - Jul 2024</div>
-                <div class="timeline-marker" aria-hidden="true"></div>
-                <div class="timeline-content">
-                  <div class="role-heading"><div><h3>Demonstrator</h3><p>Institute of Software Engineering (IJSE)</p></div></div>
-                  <p>
-                    Supported students with programming fundamentals, Java development, and
-                    practical problem-solving in lab sessions.
-                  </p>
+            <article class="timeline-item reveal">
+              <div class="timeline-date">Jul 2023 - Jul 2024</div>
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <div class="role-heading">
+                  <div>
+                    <h3>Demonstrator</h3>
+                    <p>Institute of Software Engineering (IJSE)</p>
+                  </div>
                 </div>
-              </article>
-            </div>
+                <p>
+                  Supported students with programming fundamentals, Java development, and
+                  practical problem-solving in lab sessions.
+                </p>
+              </div>
+            </article>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section projects" id="projects" aria-labelledby="projects-title">
-        <div class="container">
-          <div class="section-heading projects-heading reveal">
-            <div>
-              <p class="section-index">04 / Featured Projects</p>
-              <h2 id="projects-title">Systems designed for complex day-to-day operations.</h2>
-            </div>
-            <p class="section-side-copy">
-              Selected work across reservations, enterprise operations, education, and commerce.
-            </p>
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading projects-heading reveal">
+          <div>
+            <p class="section-index">04 / Featured Projects</p>
+            <h2 id="projects-title">Systems designed for complex day-to-day operations.</h2>
           </div>
-
-          <div class="project-grid">
-            <article class="project-card reveal">
-              <div class="project-media project-media-logo">
-                <img src="./assets/serviced-aprtment-logo.png" alt="Serviced Apartments project logo" loading="lazy" />
-                <div class="project-media-meta"><span>01</span><strong>Backend</strong></div>
-              </div>
-              <div class="project-body">
-                <p class="project-type">Hospitality &amp; Reservations</p>
-                <h3>Serviced Apartments</h3>
-                <p>
-                  Backend services for a serviced-apartment reservation platform, with secure
-                  access, property availability, and iCalendar-based scheduling.
-                </p>
-                <div class="project-tags">
-                  <span>Java</span><span>Spring Boot</span><span>Spring Security</span>
-                  <span>iCalendar</span><span>PostgreSQL</span>
-                </div>
-                <div class="project-footer">
-                  <a class="project-link" href="https://servicedapartments.lk/" target="_blank" rel="noreferrer">
-                    Visit Website
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M19 5l-9 9M19 13v6H5V5h6" /></svg>
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <div class="project-media project-media-placeholder">
-                <img src="./assets/novex-logo.png" alt="Replaceable system preview placeholder for Novex ERP" loading="lazy" />
-                <div class="project-media-meta"><span>02</span><strong>Full Stack</strong></div>
-                <span class="project-image-note">Preview placeholder</span>
-              </div>
-              <div class="project-body">
-                <p class="project-type">Enterprise Resource Planning</p>
-                <h3>Novex ERP</h3>
-                <p>
-                  A comprehensive enterprise platform developed for A &amp; R Technology International
-                  Pvt Ltd, bringing employees, sales, inventory, tax files, raw materials, customers,
-                  and suppliers into one system.
-                </p>
-                <div class="project-tags">
-                  <span>Angular</span><span>Java</span><span>Spring Boot</span>
-                  <span>Spring Security</span><span>PostgreSQL</span>
-                </div>
-                <div class="project-footer">
-                  <span class="project-private">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2" /><path d="M8 10V7a4 4 0 0 1 8 0v3" /></svg>
-                    Private client system
-                  </span>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <div class="project-media project-media-placeholder">
-                <img src="./assets/bizcore-logo.png" alt="Replaceable system preview placeholder for BIZCORE ERP System" loading="lazy" />
-                <div class="project-media-meta"><span>03</span><strong>Full Stack</strong></div>
-                <span class="project-image-note">Preview placeholder</span>
-              </div>
-              <div class="project-body">
-                <p class="project-type">Enterprise Resource Planning</p>
-                <h3>BIZCORE ERP System</h3>
-                <p>
-                  A comprehensive enterprise solution developed for Thotawattha Engineering,
-                  centralising employees, sales, inventory, tax files, raw materials, customers,
-                  and suppliers.
-                </p>
-                <div class="project-tags">
-                  <span>Angular</span><span>Java</span><span>Spring Boot</span>
-                  <span>Spring Security</span><span>PostgreSQL</span>
-                </div>
-                <div class="project-footer">
-                  <span class="project-private">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2" /><path d="M8 10V7a4 4 0 0 1 8 0v3" /></svg>
-                    Private client system
-                  </span>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <div class="project-media project-media-logo">
-                <img src="./assets/neonex-academy.png" alt="Neonex Academy project logo" loading="lazy" />
-                <div class="project-media-meta"><span>04</span><strong>Backend</strong></div>
-              </div>
-              <div class="project-body">
-                <p class="project-type">Education Technology</p>
-                <h3>Neonex Academy</h3>
-                <p>
-                  Backend services for the Neonex Academy learning platform, built around secure
-                  Java APIs and reliable PostgreSQL data management.
-                </p>
-                <div class="project-tags">
-                  <span>Java</span><span>Spring Boot</span><span>Spring Security</span><span>PostgreSQL</span>
-                </div>
-                <div class="project-footer">
-                  <a class="project-link" href="https://neonexacademy.lk/" target="_blank" rel="noreferrer">
-                    Visit Website
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M19 5l-9 9M19 13v6H5V5h6" /></svg>
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <div class="project-media">
-                <img src="./assets/project-rehab-solution.png" alt="Rehab Solution online store homepage" loading="lazy" />
-                <div class="project-media-meta"><span>05</span><strong>Full Stack</strong></div>
-              </div>
-              <div class="project-body">
-                <p class="project-type">Healthcare E-Commerce</p>
-                <h3>Rehab Solution Online Store</h3>
-                <p>
-                  A custom e-commerce website for Rehab Solution Pvt Ltd, created to showcase and
-                  sell hospital furniture and medical equipment through a clear, responsive journey.
-                </p>
-                <div class="project-tags">
-                  <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span>
-                  <span>Spring Boot</span><span>MySQL</span><span>SMTP</span>
-                </div>
-                <div class="project-footer">
-                  <a class="project-link project-link-github" href="https://github.com/Novo-Soft-Technologies-Pvt-Ltd/rehab-solution-website-be" target="_blank" rel="noreferrer">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.22c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.74.08-.74 1.2.09 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.76.84 1.23 1.91 1.23 3.22 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22v3.3c0 .32.22.69.83.58A12 12 0 0 0 12 .5Z" /></svg>
-                    View on GitHub
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <div class="project-media">
-                <img src="./assets/project-home-heaven.png" alt="Home Heaven MERN application homepage preview" loading="lazy" />
-                <div class="project-media-meta"><span>06</span><strong>Full Stack</strong></div>
-              </div>
-              <div class="project-body">
-                <p class="project-type">MERN Stack Project</p>
-                <h3>Home Heaven</h3>
-                <p>
-                  A full-stack property discovery application that brings a responsive home-browsing
-                  experience together with a modern JavaScript architecture.
-                </p>
-                <div class="project-tags">
-                  <span>MongoDB</span><span>Express.js</span><span>React</span><span>Node.js</span>
-                </div>
-                <div class="project-footer">
-                  <a class="project-link project-link-github" href="https://github.com/IroshPerera/mern-home-heaven-app" target="_blank" rel="noreferrer">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.22c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.74.08-.74 1.2.09 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.76.84 1.23 1.91 1.23 3.22 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22v3.3c0 .32.22.69.83.58A12 12 0 0 0 12 .5Z" /></svg>
-                    View on GitHub
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <div class="project-media">
-                <img src="./assets/project-hello-shoe.png" alt="Hello Shoe application login interface preview" loading="lazy" />
-                <div class="project-media-meta"><span>07</span><strong>Full Stack</strong></div>
-              </div>
-              <div class="project-body">
-                <p class="project-type">Retail Application</p>
-                <h3>Hello Shoe</h3>
-                <p>
-                  A responsive footwear retail application with a Java backend, secured application
-                  flows, and PostgreSQL persistence.
-                </p>
-                <div class="project-tags">
-                  <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span>
-                  <span>Spring Boot</span><span>Spring Security</span><span>PostgreSQL</span>
-                </div>
-                <div class="project-footer">
-                  <a class="project-link project-link-github" href="https://github.com/IroshPerera/hello_shoe_pvt_ltd_project_frontend" target="_blank" rel="noreferrer">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.22c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.74.08-.74 1.2.09 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.76.84 1.23 1.91 1.23 3.22 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22v3.3c0 .32.22.69.83.58A12 12 0 0 0 12 .5Z" /></svg>
-                    View on GitHub
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <div class="project-media project-media-logo">
-                <img src="./assets/project-sampath-mobile.png" alt="Sampath Bank mobile app clone project mark" loading="lazy" />
-                <div class="project-media-meta"><span>08</span><strong>Mobile</strong></div>
-              </div>
-              <div class="project-body">
-                <p class="project-type">React Native UI Practice</p>
-                <h3>Sampath Bank Mobile App Clone</h3>
-                <p>
-                  An independent React Native practice project recreating a modern mobile-banking
-                  interface. This concept is not affiliated with or endorsed by Sampath Bank.
-                </p>
-                <div class="project-tags">
-                  <span>React Native</span><span>JavaScript</span><span>Mobile UI</span>
-                </div>
-                <div class="project-footer">
-                  <a class="project-link project-link-github" href="https://github.com/IroshPerera/sampath-bank-mobile-app-clone" target="_blank" rel="noreferrer">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.22c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.74.08-.74 1.2.09 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.76.84 1.23 1.91 1.23 3.22 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22v3.3c0 .32.22.69.83.58A12 12 0 0 0 12 .5Z" /></svg>
-                    View on GitHub
-                  </a>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="projects-cta reveal">
-            <div>
-              <p>More engineering work</p>
-              <h3>Explore additional repositories and experiments.</h3>
-            </div>
-            <a class="projects-cta-button" href="https://github.com/IroshPerera" target="_blank" rel="noreferrer">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.22c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.74.08-.74 1.2.09 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.76.84 1.23 1.91 1.23 3.22 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22v3.3c0 .32.22.69.83.58A12 12 0 0 0 12 .5Z" /></svg>
-              View More Projects
-              <span aria-hidden="true">↗</span>
-            </a>
-          </div>
+          <p class="section-side-copy">
+            Selected work across reservations, enterprise operations, education, and commerce.
+          </p>
         </div>
-      </section>
 
-      <section class="section open-source" id="open-source" aria-labelledby="open-source-title">
-        <div class="container">
-          <div class="section-heading open-source-heading reveal">
-            <p class="section-index">05 / Open Source</p>
-            <div>
-              <h2 id="open-source-title">Building reusable tools for Sinhala language support.</h2>
-              <p class="section-side-copy open-source-intro">
-                A focused open-source contribution that turns a language need into a practical tool for Java developers.
-              </p>
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-media project-media-logo">
+              <img src="./assets/serviced-aprtment-logo.png" alt="Serviced Apartments project logo" loading="lazy" />
+              <div class="project-media-meta"><span>01</span><strong>Backend</strong></div>
             </div>
-          </div>
-
-          <article class="open-source-feature reveal">
-            <div class="open-source-copy">
-              <div class="open-source-badges" aria-label="Project classification">
-                <span>Open Source</span>
-                <span>Java Library</span>
-              </div>
-              <p class="open-source-kicker">Language Technology · Maven Package</p>
-              <h3>Sinhala Transliterator</h3>
+            <div class="project-body">
+              <p class="project-type">Hospitality &amp; Reservations</p>
+              <h3>Serviced Apartments</h3>
               <p>
-                A lightweight Java library I created to help developers transliterate Sinhala script
-                into Latin characters through predefined mapping rules. It supports Sinhala vowels,
-                consonants, diacritics, digits, punctuation, and safe handling of unsupported characters.
+                Backend services for a serviced-apartment reservation platform, with secure
+                access, property availability, and iCalendar-based scheduling.
               </p>
-
-              <div class="open-source-purpose">
-                <span class="open-source-script" aria-hidden="true">සිං</span>
-                <div>
-                  <strong>Built for local-language enablement</strong>
-                  <span>Making Sinhala text processing easier to integrate into Java applications.</span>
-                </div>
+              <div class="project-tags">
+                <span>Java</span><span>Spring Boot</span><span>Spring Security</span>
+                <span>iCalendar</span><span>PostgreSQL</span>
               </div>
-
-              <div class="open-source-tags" aria-label="Technology and project details">
-                <span>Java</span><span>Maven</span><span>Transliteration</span><span>Apache 2.0</span>
+              <div class="project-footer">
+                <a class="project-link" href="https://servicedapartments.lk/" target="_blank" rel="noreferrer">
+                  Visit Website
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M14 5h5v5M19 5l-9 9M19 13v6H5V5h6" />
+                  </svg>
+                </a>
               </div>
-
-              <a class="open-source-link" href="https://github.com/IroshPerera/sinhala-transliterator" target="_blank" rel="noreferrer">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.22c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.74.08-.74 1.2.09 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.76.84 1.23 1.91 1.23 3.22 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22v3.3c0 .32.22.69.83.58A12 12 0 0 0 12 .5Z" /></svg>
-                View Repository
-                <span aria-hidden="true">↗</span>
-              </a>
             </div>
+          </article>
 
-            <div class="open-source-visual">
-              <img
-                class="open-source-portrait-cutout"
-                src="./assets/open-source-portrait-cutout.webp"
-                alt=""
-                width="768"
-                height="1152"
-                loading="lazy"
-                decoding="async"
-                aria-hidden="true"
-              />
+          <article class="project-card reveal">
+            <div class="project-media project-media-placeholder">
+              <img src="./assets/novex-logo.png" alt="Replaceable system preview placeholder for Novex ERP"
+                loading="lazy" />
+              <div class="project-media-meta"><span>02</span><strong>Full Stack</strong></div>
+              <span class="project-image-note">Preview placeholder</span>
+            </div>
+            <div class="project-body">
+              <p class="project-type">Enterprise Resource Planning</p>
+              <h3>Novex ERP</h3>
+              <p>
+                A comprehensive enterprise platform developed for A &amp; R Technology International
+                Pvt Ltd, bringing employees, sales, inventory, tax files, raw materials, customers,
+                and suppliers into one system.
+              </p>
+              <div class="project-tags">
+                <span>Angular</span><span>Java</span><span>Spring Boot</span>
+                <span>Spring Security</span><span>PostgreSQL</span>
+              </div>
+              <div class="project-footer">
+                <span class="project-private">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="5" y="10" width="14" height="10" rx="2" />
+                    <path d="M8 10V7a4 4 0 0 1 8 0v3" />
+                  </svg>
+                  Private client system
+                </span>
+              </div>
+            </div>
+          </article>
 
-              <div class="open-source-code" aria-label="Maven dependency for Sinhala Transliterator version 1.1.0">
-                <div class="open-source-code-bar">
-                  <div aria-hidden="true"><span></span><span></span><span></span></div>
-                  <strong>pom.xml</strong>
-                </div>
-                <pre><code><span class="code-muted">&lt;dependency&gt;</span>
-  <span class="code-key">&lt;groupId&gt;</span>io.github.iroshperera<span class="code-key">&lt;/groupId&gt;</span>
-  <span class="code-key">&lt;artifactId&gt;</span>sinhala-transliterator<span class="code-key">&lt;/artifactId&gt;</span>
-  <span class="code-key">&lt;version&gt;</span><span class="code-value">1.1.0</span><span class="code-key">&lt;/version&gt;</span>
-<span class="code-muted">&lt;/dependency&gt;</span></code></pre>
-                <div class="open-source-code-footer">
-                  <span>Reusable Maven dependency</span>
-                  <strong>v1.1.0</strong>
-                </div>
+          <article class="project-card reveal">
+            <div class="project-media project-media-placeholder">
+              <img src="./assets/bizcore-logo.png" alt="Replaceable system preview placeholder for BIZCORE ERP System"
+                loading="lazy" />
+              <div class="project-media-meta"><span>03</span><strong>Full Stack</strong></div>
+              <span class="project-image-note">Preview placeholder</span>
+            </div>
+            <div class="project-body">
+              <p class="project-type">Enterprise Resource Planning</p>
+              <h3>BIZCORE ERP System</h3>
+              <p>
+                A comprehensive enterprise solution developed for Thotawattha Engineering,
+                centralising employees, sales, inventory, tax files, raw materials, customers,
+                and suppliers.
+              </p>
+              <div class="project-tags">
+                <span>Angular</span><span>Java</span><span>Spring Boot</span>
+                <span>Spring Security</span><span>PostgreSQL</span>
+              </div>
+              <div class="project-footer">
+                <span class="project-private">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="5" y="10" width="14" height="10" rx="2" />
+                    <path d="M8 10V7a4 4 0 0 1 8 0v3" />
+                  </svg>
+                  Private client system
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media project-media-logo">
+              <img src="./assets/neonex-academy.png" alt="Neonex Academy project logo" loading="lazy" />
+              <div class="project-media-meta"><span>04</span><strong>Backend</strong></div>
+            </div>
+            <div class="project-body">
+              <p class="project-type">Education Technology</p>
+              <h3>Neonex Academy</h3>
+              <p>
+                Backend services for the Neonex Academy learning platform, built around secure
+                Java APIs and reliable PostgreSQL data management.
+              </p>
+              <div class="project-tags">
+                <span>Java</span><span>Spring Boot</span><span>Spring Security</span><span>PostgreSQL</span>
+              </div>
+              <div class="project-footer">
+                <a class="project-link" href="https://neonexacademy.lk/" target="_blank" rel="noreferrer">
+                  Visit Website
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M14 5h5v5M19 5l-9 9M19 13v6H5V5h6" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media">
+              <img src="./assets/project-rehab-solution.png" alt="Rehab Solution online store homepage"
+                loading="lazy" />
+              <div class="project-media-meta"><span>05</span><strong>Full Stack</strong></div>
+            </div>
+            <div class="project-body">
+              <p class="project-type">Healthcare E-Commerce</p>
+              <h3>Rehab Solution Online Store</h3>
+              <p>
+                A custom e-commerce website for Rehab Solution Pvt Ltd, created to showcase and
+                sell hospital furniture and medical equipment through a clear, responsive journey.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span>
+                <span>Spring Boot</span><span>MySQL</span><span>SMTP</span>
+              </div>
+              <div class="project-footer">
+                <a class="project-link project-link-github"
+                  href="https://github.com/Novo-Soft-Technologies-Pvt-Ltd/rehab-solution-website-be" target="_blank"
+                  rel="noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.22c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.74.08-.74 1.2.09 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.76.84 1.23 1.91 1.23 3.22 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22v3.3c0 .32.22.69.83.58A12 12 0 0 0 12 .5Z" />
+                  </svg>
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media">
+              <img src="./assets/project-home-heaven.png" alt="Home Heaven MERN application homepage preview"
+                loading="lazy" />
+              <div class="project-media-meta"><span>06</span><strong>Full Stack</strong></div>
+            </div>
+            <div class="project-body">
+              <p class="project-type">MERN Stack Project</p>
+              <h3>Home Heaven</h3>
+              <p>
+                A full-stack property discovery application that brings a responsive home-browsing
+                experience together with a modern JavaScript architecture.
+              </p>
+              <div class="project-tags">
+                <span>MongoDB</span><span>Express.js</span><span>React</span><span>Node.js</span>
+              </div>
+              <div class="project-footer">
+                <a class="project-link project-link-github" href="https://github.com/IroshPerera/mern-home-heaven-app"
+                  target="_blank" rel="noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.22c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.74.08-.74 1.2.09 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.76.84 1.23 1.91 1.23 3.22 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22v3.3c0 .32.22.69.83.58A12 12 0 0 0 12 .5Z" />
+                  </svg>
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media">
+              <img src="./assets/project-hello-shoe.png" alt="Hello Shoe application login interface preview"
+                loading="lazy" />
+              <div class="project-media-meta"><span>07</span><strong>Full Stack</strong></div>
+            </div>
+            <div class="project-body">
+              <p class="project-type">Retail Application</p>
+              <h3>Hello Shoe</h3>
+              <p>
+                A responsive footwear retail application with a Java backend, secured application
+                flows, and PostgreSQL persistence.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span>
+                <span>Spring Boot</span><span>Spring Security</span><span>PostgreSQL</span>
+              </div>
+              <div class="project-footer">
+                <a class="project-link project-link-github"
+                  href="https://github.com/IroshPerera/hello_shoe_pvt_ltd_project_frontend" target="_blank"
+                  rel="noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.22c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.74.08-.74 1.2.09 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.76.84 1.23 1.91 1.23 3.22 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22v3.3c0 .32.22.69.83.58A12 12 0 0 0 12 .5Z" />
+                  </svg>
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media project-media-logo">
+              <img src="./assets/project-sampath-mobile.png" alt="Sampath Bank mobile app clone project mark"
+                loading="lazy" />
+              <div class="project-media-meta"><span>08</span><strong>Mobile</strong></div>
+            </div>
+            <div class="project-body">
+              <p class="project-type">React Native UI Practice</p>
+              <h3>Sampath Bank Mobile App Clone</h3>
+              <p>
+                An independent React Native practice project recreating a modern mobile-banking
+                interface. This concept is not affiliated with or endorsed by Sampath Bank.
+              </p>
+              <div class="project-tags">
+                <span>React Native</span><span>JavaScript</span><span>Mobile UI</span>
+              </div>
+              <div class="project-footer">
+                <a class="project-link project-link-github"
+                  href="https://github.com/IroshPerera/sampath-bank-mobile-app-clone" target="_blank" rel="noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.22c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.74.08-.74 1.2.09 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.76.84 1.23 1.91 1.23 3.22 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22v3.3c0 .32.22.69.83.58A12 12 0 0 0 12 .5Z" />
+                  </svg>
+                  View on GitHub
+                </a>
               </div>
             </div>
           </article>
         </div>
-      </section>
 
-      <section class="section gallery" id="gallery" aria-labelledby="gallery-title">
-        <div class="container">
-          <div class="section-heading gallery-heading reveal">
-            <p class="section-index">06 / Professional Gallery</p>
-            <div>
-              <h2 id="gallery-title">The people, events, and communities behind the work.</h2>
-              <p class="section-side-copy gallery-intro">
-                Selected moments from professional events, team initiatives, knowledge sharing, and community work.
-              </p>
-            </div>
+        <div class="projects-cta reveal">
+          <div>
+            <p>More engineering work</p>
+            <h3>Explore additional repositories and experiments.</h3>
           </div>
-
-          <div class="gallery-layout">
-            <article class="gallery-card reveal">
-              <button
-                class="gallery-image-button"
-                type="button"
-                aria-label="Open Future Coders event photo"
-                data-gallery-open
-                data-gallery-src="./assets/future-coders-novo-soft.jpg"
-                data-gallery-alt="Novo Soft Technologies team at the Future Coders event"
-                data-gallery-title="Future Coders · Novo Soft Technologies"
-              >
-                <img
-                  src="./assets/future-coders-novo-soft.jpg"
-                  alt="Novo Soft Technologies team at the Future Coders event"
-                  width="1920"
-                  height="1280"
-                  loading="lazy"
-                />
-                <span class="gallery-view">
-                  View photo
-                  <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 3H3v4M13 3h4v4M7 17H3v-4M13 17h4v-4" /></svg>
-                </span>
-              </button>
-              <div class="gallery-caption">
-                <div>
-                  <p class="event-kicker">Community &amp; Team Event</p>
-                  <h3>Future Coders</h3>
-                </div>
-                <p>Novo Soft Technologies · Sri Lanka</p>
-              </div>
-            </article>
-
-            <aside class="gallery-story reveal">
-              <p class="gallery-story-label">Beyond the code</p>
-              <h3>Growing through collaboration and contribution.</h3>
-              <p>
-                Professional growth also comes from sharing ideas, supporting emerging developers,
-                and building strong teams. This gallery will continue to document those moments.
-              </p>
-              <div class="gallery-values" aria-label="Gallery themes">
-                <span>Community</span>
-                <span>Leadership</span>
-                <span>Knowledge sharing</span>
-                <span>Team culture</span>
-              </div>
-              <div class="gallery-count"><strong>03</strong><span>documented professional moments</span></div>
-            </aside>
-          </div>
-
-          <section class="event-highlights reveal" aria-label="Additional professional events and milestones">
-            <div class="event-highlight-grid">
-              <button
-                class="event-highlight-card event-highlight-innovesta"
-                type="button"
-                aria-label="Open Innovesta 2023 presentation photo"
-                data-gallery-open
-                data-gallery-src="./assets/event-innovesta-23.jpg"
-                data-gallery-alt="Irosh Perera presenting a software project at Innovesta 2023"
-                data-gallery-title="Innovesta ’23 · Project Presentation"
-              >
-                <img
-                  src="./assets/event-innovesta-23.jpg"
-                  alt="Irosh Perera presenting a software project at Innovesta 2023"
-                  width="1365"
-                  height="2048"
-                  loading="lazy"
-                />
-                <span class="event-highlight-copy"><strong>Innovesta ’23</strong><small>Project presentation</small></span>
-              </button>
-
-              <button
-                class="event-highlight-card event-highlight-graduation"
-                type="button"
-                aria-label="Open IJSE graduation photo"
-                data-gallery-open
-                data-gallery-src="./assets/event-ijse-graduation.png"
-                data-gallery-alt="Irosh Perera in graduation attire holding his IJSE diploma"
-                data-gallery-title="IJSE Graduation · Academic Milestone"
-              >
-                <img
-                  src="./assets/event-ijse-graduation.png"
-                  alt="Irosh Perera in graduation attire holding his IJSE diploma"
-                  width="1149"
-                  height="1368"
-                  loading="lazy"
-                />
-                <span class="event-highlight-copy"><strong>IJSE Graduation</strong><small>Academic milestone</small></span>
-              </button>
-            </div>
-          </section>
+          <a class="projects-cta-button" href="https://github.com/IroshPerera" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.22c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.74.08-.74 1.2.09 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.76.84 1.23 1.91 1.23 3.22 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22v3.3c0 .32.22.69.83.58A12 12 0 0 0 12 .5Z" />
+            </svg>
+            View More Projects
+            <span aria-hidden="true">↗</span>
+          </a>
         </div>
-      </section>
+      </div>
+    </section>
 
-            <section class="section recommendations" id="recommendations" aria-labelledby="recommendations-title">
-        <div class="container">
-          <div class="section-heading recommendations-heading reveal">
-            <p class="section-index">07 / Recommendations</p>
-            <div>
-              <h2 id="recommendations-title">Professional feedback, shared with permission.</h2>
-              <p class="section-side-copy recommendations-intro">
-               Genuine feedback highlighting my technical skills, teamwork, and professional growth.
-              </p>
-            </div>
+    <section class="section open-source" id="open-source" aria-labelledby="open-source-title">
+      <div class="container">
+        <div class="section-heading open-source-heading reveal">
+          <p class="section-index">05 / Open Source</p>
+          <div>
+            <h2 id="open-source-title">Open-source tools for real developer problems.</h2>
+            <p class="section-side-copy open-source-intro">
+              Reusable Java and Spring Boot packages built to make everyday application development simpler and safer.
+            </p>
           </div>
+        </div>
+
+        <div class="open-source-carousel reveal" data-open-source-carousel aria-roledescription="carousel"
+          aria-label="Open-source projects">
+          <div class="open-source-viewport">
+            <div class="open-source-track" data-open-source-track aria-live="off">
 
 
-          <div class="recommendation-carousel" data-recommendation-carousel aria-roledescription="carousel" aria-label="Professional recommendations">
-            <div class="recommendation-viewport">
-              <div class="recommendation-track" data-recommendation-track aria-live="polite">
-<article class="recommendation-card" data-recommendation-slide role="group"
-  aria-roledescription="slide" aria-label="Recommendation 1 of 2">
+                 <article class="open-source-feature open-source-slide" data-open-source-slide role="group"
+                aria-roledescription="slide" aria-label="Open-source project 2 of 2" aria-hidden="true" inert>
+                <div class="open-source-copy">
+                  <div class="open-source-badges" aria-label="Project classification">
+                    <span>Open Source</span>
+                    <span>Spring Boot Starter</span>
+                  </div>
+                  <p class="open-source-kicker">Backend Reliability · Maven Starter</p>
+                  <h3>Spring Boot Idempotency Starter</h3>
+                  <p>
+                    A reusable Spring Boot starter designed to protect API operations from accidental duplicate
+                    processing. It provides configurable idempotency-key validation, request-hash checks, response
+                    caching, expiry, and processing-timeout controls for safer retryable requests.
+                  </p>
 
-  <div class="recommendation-card-top">
-    <span class="sample-badge">LinkedIn Recommendation</span>
+                  <div class="open-source-purpose">
+                    <span class="open-source-script open-source-script-api" aria-hidden="true">API</span>
+                    <div>
+                      <strong>Built for reliable API operations</strong>
+                      <span>Helping Spring Boot services handle repeated client requests safely and consistently.</span>
+                    </div>
+                  </div>
 
-    <svg viewBox="0 0 48 48" aria-hidden="true">
-      <path d="M8 26c0-9 4.4-15.3 13-19l2.5 4.5C18 14.3 16 18 16 22h7v18H8V26Zm23 0c0-9 4.4-15.3 13-19l2.5 4.5C41 14.3 39 18 39 22h7v18H31V26Z" />
-    </svg>
-  </div>
+                  <div class="open-source-tags" aria-label="Technology and project details">
+                    <span>Java</span><span>Spring Boot</span><span>Maven</span><span>Idempotency</span>
+                  </div>
 
-  <blockquote>
-    “I enjoyed collaborating with Irosh on several projects at Novo Soft Technologies,
-    and I can say with confidence that he is a dedicated and capable software engineer.
+                  <a class="open-source-link"
+                    href="https://github.com/IroshPerera/spring-boot-idempotency-starter" target="_blank"
+                    rel="noreferrer">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.22c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.74.08-.74 1.2.09 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.76.84 1.23 1.91 1.23 3.22 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22v3.3c0 .32.22.69.83.58A12 12 0 0 0 12 .5Z" />
+                    </svg>
+                    View Repository
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
 
-    During our shared work, I observed strong technical skills, especially in backend
-    development, problem-solving, and creating practical solutions for real projects.
-    He consistently showed a readiness to learn, accept challenges, and add value to our team.
+                <div class="open-source-visual">
+                  <img class="open-source-portrait-cutout" src="./assets/open-source-portrait-cutout.webp" alt=""
+                    width="768" height="1152" loading="lazy" decoding="async" aria-hidden="true" />
 
-    I value his cooperative approach, reliability, and effectiveness in working with others
-    toward project goals. I strongly recommend Irosh to anyone seeking a talented, diligent,
-    and team-focused software engineer.”
-  </blockquote>
+                  <div class="open-source-code" aria-label="Example configuration for Spring Boot Idempotency Starter">
+                    <div class="open-source-code-bar">
+                      <div aria-hidden="true"><span></span><span></span><span></span></div>
+                      <strong>pom.xml</strong>
+                    </div>
+                               <pre><code><span class="code-muted">&lt;dependency&gt;</span>
+  <span class="code-key">&lt;groupId&gt;</span>io.github.iroshperera<span class="code-key">&lt;/groupId&gt;</span>
+  <span class="code-key">&lt;artifactId&gt;</span>spring-boot-idempotency-starter<span class="code-key">&lt;/artifactId&gt;</span>
+  <span class="code-key">&lt;version&gt;</span><span class="code-value">0.1.0</span><span class="code-key">&lt;/version&gt;</span>
+<span class="code-muted">&lt;/dependency&gt;</span></code></pre>
+                    <div class="open-source-code-footer">
+                      <span>Reusable Maven dependency</span>
+                      <strong>v0.1.0</strong>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              
 
-  <div class="reviewer">
-    <img class="reviewer-avatar"
-      src="./assets/rayan-avatar.jpeg"
-      alt="Rayan Cooray" />
+              <article class="open-source-feature open-source-slide" data-open-source-slide role="group"
+                aria-roledescription="slide" aria-label="Open-source project 1 of 2" aria-hidden="false">
+                <div class="open-source-copy">
+                  <div class="open-source-badges" aria-label="Project classification">
+                    <span>Open Source</span>
+                    <span>Java Library</span>
+                  </div>
+                  <p class="open-source-kicker">Language Technology · Maven Package</p>
+                  <h3>Sinhala Transliterator</h3>
+                  <p>
+                    A lightweight Java library I created to help developers transliterate Sinhala script
+                    into Latin characters through predefined mapping rules. It supports Sinhala vowels,
+                    consonants, diacritics, digits, punctuation, and safe handling of unsupported characters.
+                  </p>
 
-    <div>
-      <strong>Rayan Cooray</strong>
-      <span>Software Engineer · Surecore Pvt Ltd</span>
-    </div>
-  </div>
-</article>
+                  <div class="open-source-purpose">
+                    <span class="open-source-script" aria-hidden="true">සිං</span>
+                    <div>
+                      <strong>Built for local-language enablement</strong>
+                      <span>Making Sinhala text processing easier to integrate into Java applications.</span>
+                    </div>
+                  </div>
 
-<article class="recommendation-card" data-recommendation-slide role="group"
-  aria-roledescription="slide" aria-label="Recommendation 1 of 2">
+                  <div class="open-source-tags" aria-label="Technology and project details">
+                    <span>Java</span><span>Maven</span><span>Transliteration</span><span>Apache 2.0</span>
+                  </div>
 
-  <div class="recommendation-card-top">
-    <span class="sample-badge">LinkedIn Recommendation</span>
+                  <a class="open-source-link" href="https://github.com/IroshPerera/sinhala-transliterator"
+                    target="_blank" rel="noreferrer">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.22c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.74.08-.74 1.2.09 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.76.84 1.23 1.91 1.23 3.22 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22v3.3c0 .32.22.69.83.58A12 12 0 0 0 12 .5Z" />
+                    </svg>
+                    View Repository
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
 
-    <svg viewBox="0 0 48 48" aria-hidden="true">
-      <path d="M8 26c0-9 4.4-15.3 13-19l2.5 4.5C18 14.3 16 18 16 22h7v18H8V26Zm23 0c0-9 4.4-15.3 13-19l2.5 4.5C41 14.3 39 18 39 22h7v18H31V26Z" />
-    </svg>
-  </div>
+                <div class="open-source-visual">
+                  <img class="open-source-portrait-cutout" src="./assets/open-source-portrait-cutout.webp" alt=""
+                    width="768" height="1152" loading="lazy" decoding="async" aria-hidden="true" />
 
-  <blockquote>
-"I’ve had the pleasure of knowing Irosh and working with him, and I’ve always appreciated his positive attitude, willingness to learn, and ability to work well with others. He is responsible, supportive, and committed to completing his work to a high standard. Irosh is also someone who communicates well and is always willing to help the team when needed. I would happily recommend him to anyone looking for a dedicated and reliable professional."
-  </blockquote>
-
-  <div class="reviewer">
-    <img class="reviewer-avatar"
-      src="./assets/sahan-avatar.jpeg"
-      alt="Rayan Cooray" />
-
-    <div>
-      <strong>Sahan Udana</strong>
-      <span>Associate Software Engineer · Surecore Pvt Ltd</span>
-    </div>
-  </div>
-</article>
+                  <div class="open-source-code" aria-label="Maven dependency for Sinhala Transliterator version 1.1.0">
+                    <div class="open-source-code-bar">
+                      <div aria-hidden="true"><span></span><span></span><span></span></div>
+                      <strong>pom.xml</strong>
+                    </div>
+                    <pre><code><span class="code-muted">&lt;dependency&gt;</span>
+  <span class="code-key">&lt;groupId&gt;</span>io.github.iroshperera<span class="code-key">&lt;/groupId&gt;</span>
+  <span class="code-key">&lt;artifactId&gt;</span>sinhala-transliterator<span class="code-key">&lt;/artifactId&gt;</span>
+  <span class="code-key">&lt;version&gt;</span><span class="code-value">1.1.0</span><span class="code-key">&lt;/version&gt;</span>
+<span class="code-muted">&lt;/dependency&gt;</span></code></pre>
+                    <div class="open-source-code-footer">
+                      <span>Reusable Maven dependency</span>
+                      <strong>v1.1.0</strong>
+                    </div>
+                  </div>
+                </div>
+              </article>
 
            
-              </div>
             </div>
-            <div class="recommendation-controls">
-              <button class="recommendation-control" type="button" data-recommendation-prev aria-label="Previous recommendation">
-                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12.5 4.5 7 10l5.5 5.5" /></svg>
-              </button>
-              <div class="recommendation-dots" role="tablist" aria-label="Select recommendation">
-                <button class="recommendation-dot is-active" type="button" role="tab" data-recommendation-dot="0" aria-label="Show recommendation 1" aria-selected="true"></button>
-                <button class="recommendation-dot" type="button" role="tab" data-recommendation-dot="1" aria-label="Show recommendation 2" aria-selected="false"></button>
-              </div>
-              <button class="recommendation-control" type="button" data-recommendation-next aria-label="Next recommendation">
-                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7.5 4.5 5.5 5.5-5.5 5.5" /></svg>
-              </button>
+          </div>
+
+          <div class="open-source-controls">
+            <button class="open-source-control" type="button" data-open-source-prev
+              aria-label="Previous open-source project">
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12.5 4.5 7 10l5.5 5.5" /></svg>
+            </button>
+            <div class="open-source-dots" role="tablist" aria-label="Select open-source project">
+              <button class="open-source-dot is-active" type="button" role="tab" data-open-source-dot="0"
+                aria-label="Show Sinhala Transliterator" aria-selected="true"></button>
+              <button class="open-source-dot" type="button" role="tab" data-open-source-dot="1"
+                aria-label="Show Spring Boot Idempotency Starter" aria-selected="false"></button>
             </div>
+            <button class="open-source-control" type="button" data-open-source-next
+              aria-label="Next open-source project">
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7.5 4.5 5.5 5.5-5.5 5.5" /></svg>
+            </button>
           </div>
         </div>
-      </section>
-
-      <section class="section contact" id="contact" aria-labelledby="contact-title">
-        <div class="container contact-shell reveal">
-          <div class="contact-copy">
-            <p class="section-index">08 / Contact</p>
-            <h2 id="contact-title">Let’s build something dependable.</h2>
-            <p>
-              I am open to backend engineering roles, software product collaborations,
-              and opportunities to solve meaningful operational challenges with thoughtful teams.
-            </p>
-            <a class="button button-light" href="mailto:iroshlashan31@gmail.com">
-              Start a conversation
-              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10h10M11 6l4 4-4 4" /></svg>
-            </a>
-          </div>
-          <div class="contact-details">
-            <a href="mailto:iroshlashan31@gmail.com">
-              <span>Email</span><strong>iroshlashan31@gmail.com</strong>
-            </a>
-            <a href="https://www.linkedin.com/in/irosh-perera-59481727b/" target="_blank" rel="noreferrer">
-              <span>LinkedIn</span><strong>Connect with Irosh</strong>
-            </a>
-            <a href="tel:+94779789761">
-              <span>Phone</span><strong>+94 77 978 9761</strong>
-            </a>
-            <div>
-              <span>Based in</span><strong>Colombo, Sri Lanka</strong>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <dialog class="gallery-lightbox" data-gallery-lightbox aria-labelledby="gallery-lightbox-title">
-      <button class="lightbox-close" type="button" aria-label="Close photo" data-gallery-close>
-        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15" /></svg>
-      </button>
-      <figure>
-        <img alt="" data-gallery-lightbox-image />
-        <figcaption>
-          <strong id="gallery-lightbox-title" data-gallery-lightbox-title></strong>
-          <span data-gallery-lightbox-note></span>
-        </figcaption>
-      </figure>
-    </dialog>
-
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">IP</span><span>Irosh Perera</span></a>
-        <p>Software Engineer · Backend Developer · Co-Founder</p>
-        <p>&copy; <span data-year></span> Irosh Perera</p>
       </div>
-    </footer>
-  </body>
+    </section>
+
+    <section class="section gallery" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-heading gallery-heading reveal">
+          <p class="section-index">06 / Professional Gallery</p>
+          <div>
+            <h2 id="gallery-title">The people, events, and communities behind the work.</h2>
+            <p class="section-side-copy gallery-intro">
+              Selected moments from professional events, team initiatives, knowledge sharing, and community work.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-layout">
+          <article class="gallery-card reveal">
+            <button class="gallery-image-button" type="button" aria-label="Open Future Coders event photo"
+              data-gallery-open data-gallery-src="./assets/future-coders-novo-soft.jpg"
+              data-gallery-alt="Novo Soft Technologies team at the Future Coders event"
+              data-gallery-title="Future Coders · Novo Soft Technologies">
+              <img src="./assets/future-coders-novo-soft.jpg"
+                alt="Novo Soft Technologies team at the Future Coders event" width="1920" height="1280"
+                loading="lazy" />
+              <span class="gallery-view">
+                View photo
+                <svg viewBox="0 0 20 20" aria-hidden="true">
+                  <path d="M7 3H3v4M13 3h4v4M7 17H3v-4M13 17h4v-4" />
+                </svg>
+              </span>
+            </button>
+            <div class="gallery-caption">
+              <div>
+                <p class="event-kicker">Community &amp; Team Event</p>
+                <h3>Future Coders</h3>
+              </div>
+              <p>Novo Soft Technologies · Sri Lanka</p>
+            </div>
+          </article>
+
+          <aside class="gallery-story reveal">
+            <p class="gallery-story-label">Beyond the code</p>
+            <h3>Growing through collaboration and contribution.</h3>
+            <p>
+              Professional growth also comes from sharing ideas, supporting emerging developers,
+              and building strong teams. This gallery will continue to document those moments.
+            </p>
+            <div class="gallery-values" aria-label="Gallery themes">
+              <span>Community</span>
+              <span>Leadership</span>
+              <span>Knowledge sharing</span>
+              <span>Team culture</span>
+            </div>
+            <div class="gallery-count"><strong>03</strong><span>documented professional moments</span></div>
+          </aside>
+        </div>
+
+        <section class="event-highlights reveal" aria-label="Additional professional events and milestones">
+          <div class="event-highlight-grid">
+            <button class="event-highlight-card event-highlight-innovesta" type="button"
+              aria-label="Open Innovesta 2023 presentation photo" data-gallery-open
+              data-gallery-src="./assets/event-innovesta-23.jpg"
+              data-gallery-alt="Irosh Perera presenting a software project at Innovesta 2023"
+              data-gallery-title="Innovesta ’23 · Project Presentation">
+              <img src="./assets/event-innovesta-23.jpg"
+                alt="Irosh Perera presenting a software project at Innovesta 2023" width="1365" height="2048"
+                loading="lazy" />
+              <span class="event-highlight-copy"><strong>Innovesta ’23</strong><small>Project
+                  presentation</small></span>
+            </button>
+
+            <button class="event-highlight-card event-highlight-graduation" type="button"
+              aria-label="Open IJSE graduation photo" data-gallery-open
+              data-gallery-src="./assets/event-ijse-graduation.png"
+              data-gallery-alt="Irosh Perera in graduation attire holding his IJSE diploma"
+              data-gallery-title="IJSE Graduation · Academic Milestone">
+              <img src="./assets/event-ijse-graduation.png"
+                alt="Irosh Perera in graduation attire holding his IJSE diploma" width="1149" height="1368"
+                loading="lazy" />
+              <span class="event-highlight-copy"><strong>IJSE Graduation</strong><small>Academic
+                  milestone</small></span>
+            </button>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section recommendations" id="recommendations" aria-labelledby="recommendations-title">
+      <div class="container">
+        <div class="section-heading recommendations-heading reveal">
+          <p class="section-index">07 / Recommendations</p>
+          <div>
+            <h2 id="recommendations-title">Professional feedback, shared with permission.</h2>
+            <p class="section-side-copy recommendations-intro">
+              Genuine feedback highlighting my technical skills, teamwork, and professional growth.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="recommendation-carousel" data-recommendation-carousel aria-roledescription="carousel"
+          aria-label="Professional recommendations">
+          <div class="recommendation-viewport">
+            <div class="recommendation-track" data-recommendation-track aria-live="polite">
+
+
+              <article class="recommendation-card" data-recommendation-slide role="group" aria-roledescription="slide"
+                aria-label="Recommendation 1 of 2">
+
+                <div class="recommendation-card-top">
+                  <span class="sample-badge">LinkedIn Recommendation</span>
+
+                  <svg viewBox="0 0 48 48" aria-hidden="true">
+                    <path
+                      d="M8 26c0-9 4.4-15.3 13-19l2.5 4.5C18 14.3 16 18 16 22h7v18H8V26Zm23 0c0-9 4.4-15.3 13-19l2.5 4.5C41 14.3 39 18 39 22h7v18H31V26Z" />
+                  </svg>
+                </div>
+
+                <blockquote>
+                  “I had the opportunity to coordinate Irosh Perera throughout his Computer Science Top-up programme at
+                  Study World Lanka Campus. During this time, he consistently approached his studies with a positive
+                  attitude and a genuine willingness to learn.
+
+                  He maintained good academic performance and successfully graduated with a Second Class First Division.
+                  His consistent efforts and commitment to his studies were reflected in his overall results.
+
+                  It was a pleasure to see his progress throughout the programme. I am confident that his skills and
+                  knowledge that he gained will support him well in his future career. I wish Irosh every success in his
+                  professional journey.”
+                </blockquote>
+
+                <div class="reviewer">
+                  <img class="reviewer-avatar" src="./assets/thisumi-avatar.jpeg" alt="Rayan Cooray" />
+
+                  <div>
+                    <strong>Thisumi Samarasekara</strong>
+                    <span>Academic Coordinator & Lecturer · Study World Lanka Campus</span>
+                  </div>
+                </div>
+              </article>
+
+                  <article class="recommendation-card" data-recommendation-slide role="group" aria-roledescription="slide"
+                aria-label="Recommendation 1 of 2">
+
+                <div class="recommendation-card-top">
+                  <span class="sample-badge">LinkedIn Recommendation</span>
+
+                  <svg viewBox="0 0 48 48" aria-hidden="true">
+                    <path
+                      d="M8 26c0-9 4.4-15.3 13-19l2.5 4.5C18 14.3 16 18 16 22h7v18H8V26Zm23 0c0-9 4.4-15.3 13-19l2.5 4.5C41 14.3 39 18 39 22h7v18H31V26Z" />
+                  </svg>
+                </div>
+
+                <blockquote>
+                  “I mentored Irosh during his Software Engineering internship at Webmotech. He was a quick learner with good technical skills, a dedicated work ethic, and a collaborative attitude. He contributed positively to the team, and I’m happy to recommend him for software engineering opportunities.”
+                </blockquote>
+
+                <div class="reviewer">
+                  <img class="reviewer-avatar" src="./assets/lakmal-avatar.jpeg" alt="Rayan Cooray" />
+
+                  <div>
+                    <strong>Lakmal Jayawardhana</strong>
+                    <span>Software Engineer · Multi-Turn Ltd (Winchester)</span>
+                  </div>
+                </div>
+              </article>
+
+
+              <article class="recommendation-card" data-recommendation-slide role="group" aria-roledescription="slide"
+                aria-label="Recommendation 1 of 2">
+
+                <div class="recommendation-card-top">
+                  <span class="sample-badge">LinkedIn Recommendation</span>
+
+                  <svg viewBox="0 0 48 48" aria-hidden="true">
+                    <path
+                      d="M8 26c0-9 4.4-15.3 13-19l2.5 4.5C18 14.3 16 18 16 22h7v18H8V26Zm23 0c0-9 4.4-15.3 13-19l2.5 4.5C41 14.3 39 18 39 22h7v18H31V26Z" />
+                  </svg>
+                </div>
+
+                <blockquote>
+                  “I enjoyed collaborating with Irosh on several projects at Novo Soft Technologies,
+                  and I can say with confidence that he is a dedicated and capable software engineer.
+
+                  During our shared work, I observed strong technical skills, especially in backend
+                  development, problem-solving, and creating practical solutions for real projects.
+                  He consistently showed a readiness to learn, accept challenges, and add value to our team.
+
+                  I value his cooperative approach, reliability, and effectiveness in working with others
+                  toward project goals. I strongly recommend Irosh to anyone seeking a talented, diligent,
+                  and team-focused software engineer.”
+                </blockquote>
+
+                <div class="reviewer">
+                  <img class="reviewer-avatar" src="./assets/rayan-avatar.jpeg" alt="Rayan Cooray" />
+
+                  <div>
+                    <strong>Rayan Cooray</strong>
+                    <span>Software Engineer · Surecore Pvt Ltd</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="recommendation-card" data-recommendation-slide role="group" aria-roledescription="slide"
+                aria-label="Recommendation 1 of 2">
+
+                <div class="recommendation-card-top">
+                  <span class="sample-badge">LinkedIn Recommendation</span>
+
+                  <svg viewBox="0 0 48 48" aria-hidden="true">
+                    <path
+                      d="M8 26c0-9 4.4-15.3 13-19l2.5 4.5C18 14.3 16 18 16 22h7v18H8V26Zm23 0c0-9 4.4-15.3 13-19l2.5 4.5C41 14.3 39 18 39 22h7v18H31V26Z" />
+                  </svg>
+                </div>
+
+                <blockquote>
+                  "I’ve had the pleasure of knowing Irosh and working with him, and I’ve always appreciated his positive
+                  attitude, willingness to learn, and ability to work well with others. He is responsible, supportive,
+                  and committed to completing his work to a high standard. Irosh is also someone who communicates well
+                  and is always willing to help the team when needed. I would happily recommend him to anyone looking
+                  for a dedicated and reliable professional."
+                </blockquote>
+
+                <div class="reviewer">
+                  <img class="reviewer-avatar" src="./assets/sahan-avatar.jpeg" alt="Rayan Cooray" />
+
+                  <div>
+                    <strong>Sahan Udana</strong>
+                    <span>Associate Software Engineer · Surecore Pvt Ltd</span>
+                  </div>
+                </div>
+              </article>
+
+
+            </div>
+          </div>
+          <div class="recommendation-controls">
+            <button class="recommendation-control" type="button" data-recommendation-prev
+              aria-label="Previous recommendation">
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M12.5 4.5 7 10l5.5 5.5" />
+              </svg>
+            </button>
+            <div class="recommendation-dots" role="tablist" aria-label="Select recommendation">
+              <button class="recommendation-dot is-active" type="button" role="tab" data-recommendation-dot="0"
+                aria-label="Show recommendation 1" aria-selected="true"></button>
+              <button class="recommendation-dot" type="button" role="tab" data-recommendation-dot="1"
+                aria-label="Show recommendation 2" aria-selected="false"></button>
+            </div>
+            <button class="recommendation-control" type="button" data-recommendation-next
+              aria-label="Next recommendation">
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <path d="m7.5 4.5 5.5 5.5-5.5 5.5" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-shell reveal">
+        <div class="contact-copy">
+          <p class="section-index">08 / Contact</p>
+          <h2 id="contact-title">Let’s build something dependable.</h2>
+          <p>
+            I am open to backend engineering roles, software product collaborations,
+            and opportunities to solve meaningful operational challenges with thoughtful teams.
+          </p>
+          <a class="button button-light" href="mailto:iroshlashan31@gmail.com">
+            Start a conversation
+            <svg viewBox="0 0 20 20" aria-hidden="true">
+              <path d="M5 10h10M11 6l4 4-4 4" />
+            </svg>
+          </a>
+        </div>
+        <div class="contact-details">
+          <a href="mailto:iroshlashan31@gmail.com">
+            <span>Email</span><strong>iroshlashan31@gmail.com</strong>
+          </a>
+          <a href="https://www.linkedin.com/in/irosh-perera-59481727b/" target="_blank" rel="noreferrer">
+            <span>LinkedIn</span><strong>Connect with Irosh</strong>
+          </a>
+          <a href="tel:+94779789761">
+            <span>Phone</span><strong>+94 77 978 9761</strong>
+          </a>
+          <div>
+            <span>Based in</span><strong>Colombo, Sri Lanka</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="gallery-lightbox" data-gallery-lightbox aria-labelledby="gallery-lightbox-title">
+    <button class="lightbox-close" type="button" aria-label="Close photo" data-gallery-close>
+      <svg viewBox="0 0 20 20" aria-hidden="true">
+        <path d="m5 5 10 10M15 5 5 15" />
+      </svg>
+    </button>
+    <figure>
+      <img alt="" data-gallery-lightbox-image />
+      <figcaption>
+        <strong id="gallery-lightbox-title" data-gallery-lightbox-title></strong>
+        <span data-gallery-lightbox-note></span>
+      </figcaption>
+    </figure>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">IP</span><span>Irosh
+          Perera</span></a>
+      <p>Software Engineer · Backend Developer · Co-Founder</p>
+      <p>&copy; <span data-year></span> Irosh Perera</p>
+    </div>
+  </footer>
+</body>
+
 </html>
